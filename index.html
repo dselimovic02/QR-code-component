@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Playfair:ital,opsz,wght@0,5..1200,500;0,5..1200,600;0,5..1200,700;1,5..1200,400&display=swap');
+
+    :root{
+        --White: hsl(0, 0%, 100%);
+        --Light-gray: hsl(212, 45%, 89%);
+        --Grayish-blue: hsl(220, 15%, 55%);
+        --Dark-blue: hsl(218, 44%, 22%);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        font-family: 'Outfit';
+    }
+    html{
+        font-size: 10px;
+    }
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background: var(--Light-gray);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        background: var(--White);
+        padding: 1.8rem;
+        border-radius: 2rem;
+        box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.1), -5px -5px 35px rgba(0, 0, 0, 0.1);
+    }
+    img{
+      width: 36rem;
+      border-radius: 1rem;
+      margin-bottom: 2.4rem;
+    }
+    h1,p{
+      text-align: center;
+    }
+    h1{
+      color: var(--Dark-blue);
+      font-size: 2.8rem;
+      margin-bottom: 1.8rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.8rem;
+      color: var(--Grayish-blue);
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="card">
+      <img src="images/image-qr-code.png" alt="qr">
+      <h1>Improve your front-end<br>skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
+    </div>
+  </div>
+</body>
+</html>
